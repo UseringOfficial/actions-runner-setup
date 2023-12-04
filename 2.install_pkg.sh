@@ -32,12 +32,7 @@ sudo npm install -g npm@10.2.0
 sudo npm install -g pnpm@8.1.1 prisma@4.13.0
 
 echo '======Install pm2 ======'
-sudo npm install pm2
+sudo npm install -g pm2
 
 echo '======Setup pnpm ======'
 pnpm setup
-echo 'export PNPM_HOME="/home/ubuntu/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac' >> ~/.bash_profile

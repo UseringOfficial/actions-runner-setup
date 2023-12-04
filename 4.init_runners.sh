@@ -15,11 +15,12 @@ echo init $number runners with hostname $hostname
 for no in `seq 1 $number`; do
     rm -rf runner-$no
     mkdir runner-$no
-    tar -zxvf actions-runner-linux-x64-2.310.2.tar.gz -C runner-$no
+    tar -zxvf actions-runner-linux-x64.tar.gz -C runner-$no
     cp .env runner-$no
     cd runner-$no
     chmod a+x *.sh
     ./config.sh --unattended --url https://github.com/UseringOfficial --token $token --name $hostname-$no
+    mkdir log
     cd ..
 done
 
