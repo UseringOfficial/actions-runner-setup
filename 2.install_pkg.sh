@@ -27,9 +27,10 @@ echo 'export NVM_DIR="$HOME/.nvm"
 
 
 echo '======Install Node & Global Package ======'
-nvm install 18.15
-sudo npm install -g npm@10.2.0
-sudo npm install -g pnpm@8.1.1 prisma@4.13.0
+nvm install 20.10
+nvm use 20.10
+nvm alias default 20.10
+npm i -g pnpm@8.11.0 prisma@4.13.0
 
 echo '======Install pm2 ======'
 sudo npm install -g pm2
