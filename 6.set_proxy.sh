@@ -11,6 +11,6 @@ echo 'config proxy for docker https://docs.docker.com/network/proxy/'
 #    "default": {
 #      "httpProxy": "http://127.0.0.1:7890",
 #      "httpsProxy": "http://127.0.0.1:7890",
-#      "noProxy": "docker.io,ccr.ccs.tencentyun.com"
+#      "noProxy": "ccr.ccs.tencentyun.com"
 #    }
 #  }
