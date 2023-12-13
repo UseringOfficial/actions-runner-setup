@@ -1,0 +1,10 @@
+[
+    {
+    "name": "runner-1",
+    "cwd": "runners/runner-1",
+    "script": "run.sh",
+    "interpreter": "/bin/bash",
+    "exec_mode": "fork",
+    "watch": false
+    }
+]

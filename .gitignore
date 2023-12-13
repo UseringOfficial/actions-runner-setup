@@ -1,4 +1,3 @@
 .DS_Store
 runners/actions-runner*.tar.gz
 ssh-proxy.pem
-runners

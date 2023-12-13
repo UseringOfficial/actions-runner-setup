@@ -5,10 +5,10 @@ if [ $# -lt 1  ]; then
     exit 1
 fi
 
-hostname=`hostname`
+token=$1
 defaultNumber=1
 number=${2:-$defaultNumber}
-token=$1
+hostname=$3
 
 echo init $number runners with hostname $hostname
 
