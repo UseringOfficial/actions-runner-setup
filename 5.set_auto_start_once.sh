@@ -1,5 +1,4 @@
 echo '======Clean Docker Every 24h======'
-echo '======Start Proxy While System Reboot======'
 (crontab -l ; echo '0 2 * * * docker system prune -af --filter "until=1h"') | crontab
 
 pm2 start ./runners/pm2.json
