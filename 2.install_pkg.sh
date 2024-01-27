@@ -18,12 +18,7 @@ sudo chmod 666 /var/run/docker.sock
 
 echo '======Install NVM ======'
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-
-# echo 'export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion' >> ~/.bash_profile
-
-# . ~/.bash_profile
+. ~/.bashrc
 
 
 echo '======Install Node & Global Package ======'
@@ -38,8 +33,8 @@ sudo npm install -g pm2
 echo '======Setup pnpm ======'
 pnpm setup
 
-echo '======Install coscli ======'
-wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
-sudo mv coscli-linux /usr/local/bin/coscli
-sudo chmod 755 /usr/local/bin/coscli
-coscli --version
+# echo '======Install coscli ======'
+# wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
+# sudo mv coscli-linux /usr/local/bin/coscli
+# sudo chmod 755 /usr/local/bin/coscli
+# coscli --version
