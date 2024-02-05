@@ -33,8 +33,8 @@ sudo npm install -g pm2
 echo '======Setup pnpm ======'
 pnpm setup
 
-# echo '======Install coscli ======'
-# wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
-# sudo mv coscli-linux /usr/local/bin/coscli
-# sudo chmod 755 /usr/local/bin/coscli
-# coscli --version
+echo '======Install coscli ======'
+wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
+sudo mv coscli-linux /usr/local/bin/coscli
+sudo chmod 755 /usr/local/bin/coscli
+coscli --version
