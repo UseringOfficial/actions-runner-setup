@@ -1,6 +1,6 @@
 cd runners
 
-if [ $# -lt 1  ]; then
+if [ $# -lt 2  ]; then
     echo "./init_runners.sh token runner_number"
     exit 1
 fi

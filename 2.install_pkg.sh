@@ -28,7 +28,7 @@ nvm alias default 20.10
 npm i -g pnpm@8.11.0 prisma@4.13.0
 
 echo '======Install pm2 ======'
-sudo npm install -g pm2
+npm install -g pm2
 
 echo '======Setup pnpm ======'
 pnpm setup
