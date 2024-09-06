@@ -18,20 +18,32 @@ sudo chmod 666 /var/run/docker.sock
 
 echo '======Install NVM ======'
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+# echo "
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# " >> ~/.bashrc
 . ~/.bashrc
 
 
 echo '======Install Node & Global Package ======'
-nvm install 20.10
-nvm use 20.10
-nvm alias default 20.10
-npm i -g pnpm@8.11.0 prisma@4.13.0
+nvm install 20.15
+nvm use 20.15
+nvm alias default 20.15
+npm i -g pnpm@8.11.0 prisma@5.18.0
 
 echo '======Install pm2 ======'
 npm install -g pm2
 
 echo '======Setup pnpm ======'
 pnpm setup
+echo "
+export PNPM_HOME="/home/ubuntu/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+" >> ~/.bashrc
 
 echo '======Install coscli ======'
 wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
