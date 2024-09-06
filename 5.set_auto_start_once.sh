@@ -1,5 +1,7 @@
 echo '======Clean Docker Every 24h======'
 (crontab -l ; echo '0 2 * * * docker system prune -af --filter "until=48h"') | crontab
+(crontab -l ; /home/ubuntu/clash/clash -d . &) | crontab
+
 
 pm2 start ./runners/pm2.json
 pm2 save
