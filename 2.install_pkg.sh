@@ -16,6 +16,10 @@ sudo docker run hello-world
 sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 
+echo '======Clean Docker Every 2d======'
+(crontab -l ; echo '0 2 * * * docker system prune -af --filter "until=48h"') | crontab
+
+
 echo '======Install NVM ======'
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 # echo "
