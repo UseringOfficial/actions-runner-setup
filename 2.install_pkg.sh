@@ -35,6 +35,7 @@ nvm install 20.15
 nvm use 20.15
 nvm alias default 20.15
 npm i -g pnpm@8.11.0 prisma@5.18.0
+corepack enable
 
 echo '======Install pm2 ======'
 npm install -g pm2
