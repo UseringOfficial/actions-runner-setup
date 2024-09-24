@@ -55,3 +55,9 @@ wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
 sudo mv coscli-linux /usr/local/bin/coscli
 sudo chmod 755 /usr/local/bin/coscli
 coscli --version
+
+echo '====== Set default editor to vi ======'
+echo "
+export EDITOR=vi
+export VISUAL=$EDITOR
+" >> ~/.bashrc
