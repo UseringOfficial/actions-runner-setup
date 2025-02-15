@@ -9,6 +9,10 @@ alias noproxy='unset all_proxy https_proxy http_proxy'
 # download clash config
 # https://ikuuu.one/user/tutorial?os=linux&client=clash
 
+# set allow_lan: true
+
+# add docker.io to white list
+
 
 
 # auto start proxy
