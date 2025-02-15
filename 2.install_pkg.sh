@@ -42,13 +42,6 @@ npm install -g pm2
 
 echo '======Setup pnpm ======'
 pnpm setup
-echo "
-export PNPM_HOME="/home/ubuntu/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-" >> ~/.bashrc
 
 echo '======Install coscli ======'
 wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
