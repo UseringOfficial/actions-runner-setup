@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 User=ubuntu
-ExecStart=/home/ubuntu/clash/clash -d /home/ubuntu/clash
+ExecStart=/home/ubuntu/proxy/clash -d /home/ubuntu/proxy
 Restart=on-failure
 RestartPreventExitStatus=23
 
